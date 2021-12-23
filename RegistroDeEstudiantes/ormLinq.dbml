@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Colegio" Class="ormLinqDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-Q6V1785;Initial Catalog=Colegio;Integrated Security=True;Pooling=False" SettingsObjectName="RegistroDeEstudiantes.Properties.Settings" SettingsPropertyName="ColegioConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Estudiante" Member="Estudiante">
+    <Type Name="Estudiante">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nombres" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Apellidos" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="edad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="carrera" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="semestre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
